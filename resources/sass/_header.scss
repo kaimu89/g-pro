@@ -1,0 +1,426 @@
+//standard.scss
+//nomal.scss
+
+* {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+// ここは普通に480px以下のモバイル用として記述していく。
+
+.none {
+    display: none;
+}
+
+//スマホ
+header {
+    .header {
+        position: relative;
+
+        .header-h1 {
+            margin: 10px 0;
+            text-align: center;
+            font-family: "Nunito", sans-serif;
+
+            .homelink {
+                text-decoration: none;
+                color: black;
+                font-size: 45px;
+            }
+        }
+
+        //app
+        .app-bell {
+            position: absolute;
+            cursor: pointer;
+            top: 12px;
+            right: 60px;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1100;
+
+            @media (min-width: 480px) {
+                right: 70px;
+            }
+
+            .fa-bell {
+                font-size: 22px;
+            }
+
+            .fa-exclamation-circle {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                font-size: 15px;
+                color: rgba(29, 161, 242, 1);
+            }
+        }
+
+        //app
+        .font {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1100;
+
+            @media (min-width: 480px) {
+                right: 20px;
+            }
+
+            .fa-bars {
+                display: block;
+                color: black;
+            }
+        }
+
+        .modalbox {
+            position: relative;
+
+            .modal {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: rgba(0, 0, 0, 0.3);
+                z-index: 1000;
+            }
+
+            .app-noti {
+                width: 80%;
+
+                @media (min-width: 480px) {
+                    width: 50%;
+                }
+
+                position: absolute;
+                right: 0;
+                z-index: 1100;
+                margin: 0;
+                background-color: white;
+                border: solid 1px black;
+                border-radius: 8px 0 8px 8px;
+
+                .m {
+                    padding: 0;
+                    text-align: center;
+                }
+
+                .noti {
+                    height: 64px;
+                    padding: 10px;
+                }
+            }
+
+            .app {
+                width: 80%;
+
+                //スマホ横
+                @media (min-width: 480px) {
+                    width: 50%;
+                }
+
+                position: absolute;
+                right: 0;
+                z-index: 1100;
+
+                .i-menu-second {
+                    margin: 0;
+                    padding: 3px 0 0 0;
+                    background-color: white;
+                    list-style-type: none;
+                    border: solid 1px black;
+                    border-radius: 20px 0 20px 20px;
+
+                    .i-menu-list {
+                        position: relative;
+                        height: 39px;
+                        text-align: center;
+                        cursor: pointer;
+
+                        .re-list {
+                            width: 100%;
+                        }
+
+                        .i-link {
+                            color: #3b3536;
+                            text-decoration: none;
+                            display: block;
+                            width: 100%;
+                            padding: 8px 0;
+                            border-radius: 20px;
+                            cursor: pointer;
+
+
+                            &:hover {
+                                color: black;
+                                background-color: #d3d3d3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pc {
+            display: none;
+        }
+
+        .pc-bell {
+            display: none;
+        }
+
+        .pc-noti {
+            display: none;
+        }
+
+        .user {
+            display: none;
+        }
+
+        .login {
+            display: none;
+        }
+
+        .u-box {
+            display: none;
+        }
+    }
+}
+
+//pc
+
+@media (min-width: 960px) {
+    header {
+        .header {
+            padding: 20px 0.6%;
+            display: flex;
+
+            @media (min-width: 1280px) {
+                padding: 20px 30px;
+            }
+
+            .header-h1 {
+                margin: 0;
+                font-size: 40px;
+                white-space: nowrap;
+            }
+
+            .app-bell {
+                display: none;
+            }
+
+            .font {
+                display: none;
+            }
+
+            .modalbox {
+                display: none;
+            }
+
+            .pc {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+
+                @media (min-width: 1280px) {
+                    width: 70%;
+                }
+
+                .homenav {
+                    width: 100%;
+                    list-style-type: none;
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0;
+                    vertical-align: middle;
+
+                    .navmenu {
+                        position: relative;
+                        padding: 5px 0;
+                        white-space: nowrap;
+
+                        .menu_second {
+                            z-index: 1000;
+                            display: none;
+                            margin-top: 5px;
+                            width: 120px;
+                            position: absolute;
+                            list-style-type: none;
+                            padding: 0;
+                            border-radius: 0 5px 5px 5px;
+                            background-color: #3b3536;
+
+                            .menu_second_list {
+                                text-align: center;
+
+                                .menu_second_a {
+                                    display: block;
+                                    width: 100%;
+                                    padding: 10px 0;
+                                    color: white;
+                                    text-decoration: none;
+
+                                    &:hover {
+                                        color: gold;
+                                    }
+                                }
+                            }
+                        }
+
+                        &:first-child {
+                            margin-left: 0;
+                        }
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        &:hover {
+                            border-radius: 10px;
+                            background-color: black;
+
+                            .menu_second {
+                                display: block;
+                            }
+
+                            .homelink {
+                                color: white;
+                            }
+                        }
+
+                        .homelink {
+                            text-decoration: none;
+                            padding: 9px;
+                            font-weight: 700;
+                            color: black;
+
+                            &:hover {
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .pc-bell {
+                position: relative;
+                display: block;
+                margin: auto 5px;
+                width: 30px;
+                cursor: pointer;
+                text-align: center;
+
+                .fa-exclamation-circle {
+                    position: absolute;
+                    top: 1px;
+                    left: 3px;
+                    font-size: 12px;
+                    color: rgba(29, 161, 242, 1);
+                }
+            }
+
+            .pc-notice {
+                .pc-noti {
+                    display: block;
+                    width: 350px;
+                    margin: 0;
+                    position: absolute;
+                    top: 70px;
+                    right: 35px;
+                    background-color: #fff;
+                    border: solid 1px #ddd;
+                    border-radius: 8px;
+                    z-index: 1100;
+
+                    .m {
+                        padding: 0;
+                        text-align: center;
+                    }
+
+                    .noti {
+                        height: 64px;
+                        padding: 10px 15px;
+                        border-bottom: solid 1px #ddd;
+
+                        .noti-l {}
+                    }
+                }
+            }
+
+            .user {
+                height: 24px;
+                margin: auto 0;
+                display: block;
+                cursor: pointer;
+                white-space: nowrap;
+                display: flex;
+
+                .u {
+                    display: inline-block;
+                    max-width: 95px;
+                    overflow: hidden;
+                    margin-right: 5px;
+                }
+
+                .fa-caret-down {
+                    margin: auto 0;
+                }
+            }
+
+            .login {
+                padding: 0;
+                display: flex;
+                list-style-type: none;
+
+                .log-link {
+                    margin: auto 0;
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+
+            .u-box {
+                display: block;
+                position: absolute;
+                top: 70px;
+                right: 0;
+                z-index: 1000;
+                width: 200px;
+
+                .u-menu {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    border: solid 1px #ddd;
+
+                    .u-list {
+                        border-bottom: solid 1px #d3d3d3;
+
+                        .u-link {
+                            text-decoration: none;
+                            color: #3b3536;
+                            padding: 10px 10px 10px 15px;
+                            display: block;
+                        }
+
+                        &:hover {
+                            background-color: #ddd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

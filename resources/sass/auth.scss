@@ -1,0 +1,122 @@
+@import "form";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 2000px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 0 0;
+  padding: 0 25px;
+
+  .header-h1 {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+
+    .homelink {
+      text-decoration: none;
+      color: black;
+      font-size: 40px;
+    }
+  }
+
+  nav {
+    .nav {
+      display: flex;
+      list-style-type: none;
+      padding: 0;
+
+      .login {
+        margin-right: 15px;
+      }
+
+      .nav-link {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+main {
+  .all {
+    background-color: white;
+
+    .title-box {
+      .title {
+        margin: 0;
+        background-color: rgb(230, 236, 240);
+        padding: 10px 5px;
+      }
+    }
+
+    .SNS {
+      width: 80%;
+      margin: 0 auto;
+
+      @media (min-width: 960px) {
+        width: 60%;
+      }
+    }
+
+    .error-pc {
+      .small {
+        margin-left: 37%;
+      }
+    }
+
+    .add {
+      border: solid 1px rgb(230, 236, 240);
+      border-radius: 5px;
+      padding-top: 30px;
+
+      @media (min-width: 960px) {
+        width: 60%;
+      }
+
+      .item-5 {
+        .forget {
+          text-decoration: none;
+          color: #3490dc;
+        }
+        .btn {
+          margin-right: 10px;
+
+          @media (min-width: 600px) {
+            margin-right: 20%;
+          }
+
+          @media (min-width: 960px) {
+            margin-right: 22%;
+          }
+        }
+      }
+      .flex {
+        @media (min-width: 600px) {
+          margin-left: 10%;
+        }
+        .log-how {
+          text-align: right;
+          margin-right: 10px;
+
+          @media (min-width: 600px) {
+            margin-right: 20%;
+          }
+
+          @media (min-width: 960px) {
+            width: 100%;
+            margin-right: 25%;
+          }
+        }
+      }
+    }
+  }
+}

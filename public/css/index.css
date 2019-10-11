@@ -1,0 +1,45 @@
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #ccc;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.screen {
+  height: 500px;
+}
+
+.mini {
+  height: 150px;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.swiper-slide.slide-1 {
+  background-image: url("/logo/under.jpeg");
+}
+
+.swiper-slide.slide-2 {
+  background-image: url("/logo/strait.jpeg");
+}
+
+.swiper-slide.slide-3 {
+  background-image: url("/logo/side.jpeg");
+}
+
+.swiper-slide.slide-4 {
+  background-image: url("/logo/caster.jpeg");
+}
+
+.swiper-slide.slide-5 {
+  background-image: url("/logo/strait.jpeg");
+}
+

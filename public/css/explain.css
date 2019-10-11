@@ -1,0 +1,53 @@
+input[type=submit] {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.flex .imgbox {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.flex .imgbox .img {
+  width: 100%;
+  height: 100%;
+}
+
+.flex .textbox {
+  border: solid 1px #d8d8d8;
+  border-radius: 5px;
+  width: 90%;
+  margin: 10px auto 0 auto;
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .flex .textbox {
+    width: 60%;
+  }
+}
+
+.flex .textbox .tx {
+  display: block;
+}
+
+.flex .item-5 {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.flex .item-5 .btn {
+  margin-right: 10%;
+}
+

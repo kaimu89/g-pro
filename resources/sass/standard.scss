@@ -1,0 +1,44 @@
+@import "header";
+@import "footer";
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    main {
+        background-color: rgb(230, 236, 240);
+        padding-top: 4px;
+        min-height: 100vh;
+
+        @media (min-width: 600px) {
+            padding-top: 8px;
+        }
+
+        .all {
+            margin: 0 auto;
+            background-color: white;
+            border: solid 1px white;
+            width: 100%;
+
+            @media (min-width: 600px) {
+                width: 80%;
+            }
+
+            @media (min-width: 960px) {
+                width: 70%;
+            }
+
+            .main-h2 {
+                text-align: center;
+                margin: 0;
+                padding: 20px 0;
+
+                @media (min-width: 600px) {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+}

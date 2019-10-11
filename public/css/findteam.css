@@ -1,0 +1,368 @@
+.banner-box {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 10;
+}
+
+@media (min-width: 600px) {
+  .banner-box {
+    top: 25%;
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .banner-box {
+    left: 30%;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner-box {
+    left: 35%;
+    width: 30%;
+  }
+}
+
+.banner-box .banner {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.banner-box .input-5 {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.banner-box .input-5 .btn {
+  margin-right: 10px;
+}
+
+input[type=submit] {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.links .pagination {
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  padding: 0;
+}
+
+.links .pagination .page-item {
+  width: 33px;
+  height: 35px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+.links .pagination .page-item:first-child {
+  width: 30px;
+  border-radius: 5px 0 0 5px;
+}
+
+.links .pagination .page-item:last-child {
+  width: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+.links .pagination .page-item .page-link {
+  text-decoration: none;
+  padding: 5.5px 11px;
+  color: #1da1f2;
+}
+
+.links .pagination .disabled .page-link {
+  color: #6c757d;
+}
+
+.links .pagination .active {
+  background-color: #1da1f2;
+}
+
+.links .pagination .active .page-link {
+  color: #dee2e6;
+}
+
+.search {
+  display: none;
+}
+
+.app-form {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.app-form .app-span {
+  color: #1da1f2;
+}
+
+.app-form .conditionsbox {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.app-form .conditionsbox .app-flex {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.app-form .conditionsbox .app-flex .item-2 {
+  text-align: center;
+}
+
+.app-form .conditionsbox .app-flex .item-2 .select {
+  width: 100%;
+  height: 25px;
+  border: solid 1px #d8d8d8;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.app-form .conditionsbox .item-5 {
+  text-align: right;
+}
+
+.display {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.display .recruit {
+  padding: 10px 10px;
+  border: solid 1px black;
+  margin-bottom: 15px;
+}
+
+.display .recruit .main-name .rec-name {
+  display: block;
+}
+
+.display .recruit .GJ .rec-game {
+  display: block;
+}
+
+.display .recruit .PR .rec-posi {
+  margin-right: 20px;
+}
+
+.display .recruit .letter .rec-leader {
+  display: block;
+}
+
+.display .recruit .letter .rec-age {
+  margin-right: 20px;
+}
+
+.display .recruit .letter .rec-house {
+  margin-right: 20px;
+}
+
+.display .recruit .item-5 {
+  text-align: right;
+}
+
+.display .recruit .item-5 .btn {
+  margin-right: 5%;
+}
+
+@media (min-width: 600px) {
+  .search {
+    display: block;
+    width: 90%;
+    margin: 0 auto 20px auto;
+  }
+
+  .search .flex {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .search .sub {
+    display: block;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+
+  .search .adj {
+    margin-left: 20%;
+  }
+
+  .search .select {
+    width: 70%;
+    margin-left: 35px;
+  }
+
+  .search .selectTeam {
+    width: 33%;
+  }
+
+  .search .gamebox {
+    width: 33%;
+  }
+
+  .search .other {
+    width: 34%;
+  }
+
+  .search .submit {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .app-form {
+    display: none;
+  }
+
+  .display {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .display .recruit {
+    border: solid 1px black;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+  }
+
+  .display .recruit .main-name .rec-name {
+    display: inline;
+  }
+
+  .display .recruit .GJ .rec-game {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .display .recruit .PR .rec-posi {
+    margin-right: 20px;
+  }
+
+  .display .recruit .letter .rec-leader {
+    margin-right: 20px;
+  }
+
+  .display .recruit .item-5 .btn {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 960px) {
+  .search {
+    display: block;
+    width: 70%;
+    margin: 0 auto 20px auto;
+  }
+
+  .search .flex {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .search .sub {
+    display: block;
+    margin-left: 35px;
+    margin-top: 10px;
+  }
+
+  .search .adj {
+    margin-left: 20%;
+  }
+
+  .search .select {
+    width: 70%;
+    margin-left: 35px;
+  }
+
+  .search .selectTeam {
+    width: 33%;
+  }
+
+  .search .gamebox {
+    width: 33%;
+  }
+
+  .search .other {
+    width: 34%;
+  }
+
+  .search .submit {
+    text-align: right;
+    margin-right: 20px;
+  }
+
+  .app-form {
+    display: none;
+  }
+
+  .display {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .display .recruit {
+    border: solid 1px black;
+    padding: 10px 30px;
+    margin-bottom: 15px;
+  }
+
+  .display .recruit .main-name .rec-name {
+    display: inline;
+  }
+
+  .display .recruit .GJ .rec-game {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  .display .recruit .PR .rec-posi {
+    margin-right: 20px;
+  }
+
+  .display .recruit .letter .rec-leader {
+    margin-right: 20px;
+    display: inline;
+  }
+}
+
+@media (min-width: 1280px) {
+  .confirm {
+    left: 35%;
+    width: 30%;
+    height: 120px;
+  }
+}
+

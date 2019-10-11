@@ -1,0 +1,41 @@
+//バナーのcssは全部共通
+.banner-box {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 10;
+
+  @media (min-width: 600px) {
+    top: 25%;
+    left: 25%;
+    width: 50%;
+  }
+
+  @media (min-width: 960px) {
+    left: 30%;
+    width: 40%;
+  }
+
+  @media (min-width: 1280px) {
+    left: 35%;
+    width: 30%;
+  }
+
+  .banner {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .input-5 {
+    width: 100%;
+    margin: 20px 0;
+    text-align: right;
+    .btn {
+      margin-right: 10px;
+    }
+  }
+}

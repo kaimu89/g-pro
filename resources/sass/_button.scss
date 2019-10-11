@@ -1,0 +1,15 @@
+//ボタンのcssをリセット
+input[type="submit"] {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  padding: 2px 5px;
+}

@@ -1,0 +1,52 @@
+@import "mymenu";
+@import "banner";
+@import "pagination";
+
+.add {
+  position: relative;
+
+  //.noneはheaderの中で宣言されているため、使えてます
+
+  .banner-box {
+    //こっちの.bannerは共通じゃないから敢えて分けて記述している
+    .banner {
+      text-align: center;
+      margin-top: 15px;
+      .twitter {
+        color: rgba(29, 161, 242, 1);
+        display: block;
+        cursor: pointer;
+      }
+
+      .mail {
+        text-align: left;
+        margin: 20px 0 0 20%;
+        display: block;
+      }
+    }
+    .input-5 {
+      margin: 10px 0 20px 0;
+    }
+  }
+
+  .oubo {
+    background-color: white;
+
+    .flex2 {
+      border: solid 1px rgb(230, 236, 240);
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .add {
+    .oubo {
+      .flex2 {
+        width: 60%;
+        margin: 0 auto 10px auto;
+      }
+    }
+  }
+}

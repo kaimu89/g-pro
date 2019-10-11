@@ -1,0 +1,167 @@
+@import "button";
+
+//add.scss
+//contanct.scss
+//recruit.scss
+//profileEdit.scss
+//myplayerEdit.scss
+//myteamEdit.scss
+
+//青の色をこれに統一 rgba(29, 161, 242, 1)
+//こっちの色も好き　#3490dc
+
+.add {
+    width: 80%;
+    margin: 0 auto;
+
+    @media (min-width: 1280px) {
+        width: 70%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .error-pc {
+        display: none;
+    }
+
+    .error-mob {
+        color: red;
+    }
+
+    .flex {
+        margin-bottom: 16px;
+
+        .item-1 {
+            display: flex;
+        }
+
+        .item-2 {
+            text-align: center;
+
+            .select {
+                width: 100%;
+                height: 25px;
+                border: solid 1px rgb(216, 216, 216);
+                background-color: white;
+                border-radius: 4px;
+            }
+
+            //confirmのスタイルのため特別
+            .select1 {
+                width: 100%;
+                height: 25px;
+                background-color: white;
+                border-radius: 4px;
+            }
+
+            .selectbox {
+                text-align: left;
+            }
+
+            .body {
+                width: 110%;
+                border: solid 1px rgb(216, 216, 216);
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .item-5 {
+        text-align: right;
+
+        .cancel {
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .add {
+        .flex {
+            .item-2 {
+                .select {
+                    width: 60%;
+                }
+
+                .select1 {
+                    width: 60%;
+                }
+
+                .selectbox {
+                    width: 60%;
+                    margin: 0 auto;
+                }
+
+                .body {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+//pc 小型PC
+@media (min-width: 960px) {
+    .add {
+        .error-pc {
+            display: block;
+
+            .small {
+                margin-left: 30%;
+                color: red;
+            }
+        }
+
+        .error-mob {
+            display: none;
+        }
+
+        .flex {
+            margin-bottom: 40px;
+            display: flex;
+
+            .item-1 {
+                display: flex;
+                width: 30%;
+
+                .name {
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+
+            .item-2 {
+                text-align: center;
+                width: 45%;
+
+                .select {
+                    width: 100%;
+                }
+
+                .select1 {
+                    width: 100%;
+                }
+
+                .selectbox {
+                    width: 100%;
+                }
+
+                .body {
+                    width: 110%;
+                }
+            }
+        }
+
+        .item-5 {
+            .btn {
+                margin-right: 10%;
+            }
+
+            .cancel {
+                margin-right: 10px;
+            }
+        }
+    }
+}

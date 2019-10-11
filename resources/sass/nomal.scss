@@ -1,0 +1,13 @@
+@import "header";
+@import "footer";
+
+/* body */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    .all {
+        border-radius: 10px;
+    }
+}

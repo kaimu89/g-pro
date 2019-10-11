@@ -1,0 +1,31 @@
+nav {
+
+    .flex {
+        display: flex;
+        border: solid 1px black;
+
+        .home {
+            list-style-type: none;
+            border: solid 1px black;
+            padding: 0;
+        }
+
+        .log {
+            display: flex;
+            list-style-type: none;
+            border: solid 1px black;
+            padding: 0;
+            margin-left: auto;
+
+            .log-b {
+                &:first-child {
+                    margin-right: 5px;
+                }
+
+                &:last-child {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

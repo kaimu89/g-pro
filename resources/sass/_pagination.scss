@@ -1,0 +1,50 @@
+.links {
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+        list-style-type: none;
+        display: flex;
+        padding: 0;
+
+        .page-item {
+            width: 33px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #dee2e6;
+            background-color: #fff;
+
+            &:first-child {
+                width: 30px;
+                border-radius: 5px 0 0 5px;
+            }
+
+            &:last-child {
+                width: 30px;
+                border-radius: 0 5px 5px 0;
+            }
+
+            .page-link {
+                text-decoration: none;
+                padding: 5.5px 11px;
+                color: rgba(29, 161, 242, 1);
+            }
+        }
+
+        .disabled {
+            .page-link {
+                color: #6c757d;
+            }
+        }
+
+        .active {
+            background-color: rgba(29, 161, 242, 1);
+
+            .page-link {
+                color: #dee2e6;
+            }
+        }
+    }
+}

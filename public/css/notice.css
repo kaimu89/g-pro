@@ -1,0 +1,309 @@
+input[type=submit] {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.oubo-box {
+  margin: 0 0 20px 10%;
+}
+
+.oubo-box .oubo {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.add {
+  background-color: #e6ecf0;
+}
+
+.add .photo {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  margin-bottom: 1px;
+  padding: 10px 10%;
+}
+
+.add .photo .picture-myteam {
+  width: 100px;
+  height: 100px;
+  background: #eee;
+}
+
+.add .photo .picture-myteam .p {
+  width: 100%;
+  height: 100%;
+}
+
+.add .photo .picture-profile {
+  width: 30%;
+  height: 130px;
+  background: #eee;
+}
+
+.add .photo .picture-profile .p {
+  width: 100%;
+  height: 100%;
+}
+
+.add .photo .input {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.add .photo .input .file {
+  width: 100%;
+}
+
+.add .photo .input .item-5 {
+  text-align: right;
+}
+
+.add .flex {
+  background-color: white;
+  padding: 10px 10%;
+}
+
+.add .flex .item-2 .select {
+  margin-left: 35%;
+  display: block;
+}
+
+.add .in-btn {
+  background-color: white;
+  padding: 10px 10%;
+  margin-bottom: 1px;
+}
+
+.add .in-btn .flex2 .item-2 {
+  text-align: center;
+}
+
+.add .item-5 {
+  text-align: right;
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.add .out {
+  padding: 0 10% 10px 0;
+}
+
+@media (min-width: 600px) {
+  .add .photo .picture-myteam {
+    width: 130px;
+    height: 130px;
+  }
+
+  .add .photo .picture-profile {
+    width: 100px;
+  }
+
+  .add .photo .input {
+    width: 240px;
+  }
+
+  .add .flex .item-2 .select {
+    margin-left: 40%;
+  }
+}
+
+@media (min-width: 960px) {
+  .add .flex {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .add .flex .item-1 {
+    width: 30%;
+    text-align: right;
+    padding: 1px;
+  }
+
+  .add .flex .item-2 {
+    width: 70%;
+  }
+
+  .add .flex .item-2 .select {
+    margin-left: 20%;
+  }
+
+  .add .in-btn .flex2 {
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .add .in-btn .flex2 .item-1 {
+    width: 30%;
+    text-align: right;
+  }
+
+  .add .in-btn .flex2 .item-2 {
+    width: 70%;
+    text-align: left;
+  }
+
+  .add .in-btn .flex2 .item-2 .select {
+    margin-left: 100px;
+  }
+}
+
+.banner-box {
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  border: solid 1px black;
+  border-radius: 5px;
+  background-color: white;
+  z-index: 10;
+}
+
+@media (min-width: 600px) {
+  .banner-box {
+    top: 25%;
+    left: 25%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .banner-box {
+    left: 30%;
+    width: 40%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner-box {
+    left: 35%;
+    width: 30%;
+  }
+}
+
+.banner-box .banner {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.banner-box .input-5 {
+  width: 100%;
+  margin: 20px 0;
+  text-align: right;
+}
+
+.banner-box .input-5 .btn {
+  margin-right: 10px;
+}
+
+.links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.links .pagination {
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  padding: 0;
+}
+
+.links .pagination .page-item {
+  width: 33px;
+  height: 35px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+.links .pagination .page-item:first-child {
+  width: 30px;
+  border-radius: 5px 0 0 5px;
+}
+
+.links .pagination .page-item:last-child {
+  width: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+.links .pagination .page-item .page-link {
+  text-decoration: none;
+  padding: 5.5px 11px;
+  color: #1da1f2;
+}
+
+.links .pagination .disabled .page-link {
+  color: #6c757d;
+}
+
+.links .pagination .active {
+  background-color: #1da1f2;
+}
+
+.links .pagination .active .page-link {
+  color: #dee2e6;
+}
+
+.add {
+  position: relative;
+}
+
+.add .banner-box .banner {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.add .banner-box .banner .twitter {
+  color: #1da1f2;
+  display: block;
+  cursor: pointer;
+}
+
+.add .banner-box .banner .mail {
+  text-align: left;
+  margin: 20px 0 0 20%;
+  display: block;
+}
+
+.add .banner-box .input-5 {
+  margin: 10px 0 20px 0;
+}
+
+.add .oubo {
+  background-color: white;
+}
+
+.add .oubo .flex2 {
+  border: solid 1px #e6ecf0;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 960px) {
+  .add .oubo .flex2 {
+    width: 60%;
+    margin: 0 auto 10px auto;
+  }
+}
+

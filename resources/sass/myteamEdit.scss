@@ -1,0 +1,176 @@
+@import "form";
+
+.add {
+  //myteam/member
+  .leader {
+    .item-1 {
+      display: flex;
+    }
+    .item-2 {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+      .select {
+        font-size: 23px;
+      }
+
+      .pass {
+        margin: auto 0;
+
+        .btn1 {
+          padding: 5px;
+          text-decoration: none;
+          color: black;
+          border: solid 1px black;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  //myteam/member
+  .check {
+    margin-top: 15px;
+
+    .item-2 {
+      .select {
+        width: 100%;
+        height: 25px;
+        border: solid 1px rgb(216, 216, 216);
+        background-color: white;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  //myteam/member
+  .member {
+    .item-1 {
+      display: flex;
+    }
+    .item-2 {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin: 0 auto;
+
+      .select {
+        font-size: 23px;
+      }
+
+      .delete {
+        margin: auto 0;
+
+        .btn2 {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+    .member-btn-box {
+      text-align: center;
+      .member-btn {
+        cursor: default;
+        border: solid 1px black;
+        border-radius: 8px;
+        padding: 4px;
+      }
+    }
+  }
+
+  //myteam/member
+  .plus {
+    margin-top: 15px;
+
+    .item-1 {
+      text-align: center;
+    }
+    .item-2 {
+      .select {
+        width: 100%;
+        height: 25px;
+        border: solid 1px rgb(216, 216, 216);
+        background-color: white;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .item-5 {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .add {
+    .leader {
+      .item-2 {
+        width: 80%;
+        margin: 0 auto;
+
+        @media (min-width: 960px) {
+          width: 60%;
+        }
+      }
+    }
+    .check {
+      .item-2 {
+        text-align: center;
+        .select {
+          width: 60%;
+        }
+      }
+    }
+    .member {
+      .item-2 {
+        width: 80%;
+        margin: 0 auto;
+
+        @media (min-width: 960px) {
+          width: 60%;
+        }
+      }
+    }
+    .plus {
+      .item-2 {
+        text-align: center;
+        .select {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .add {
+    .flex {
+      display: block;
+
+      .item-1 {
+        width: 100%;
+        .name {
+          margin: 0;
+        }
+      }
+
+      .item-2 {
+        width: 100%;
+        text-align: center;
+
+        .select {
+          width: 60%;
+        }
+
+        .selectbox {
+          width: 60%;
+        }
+
+        .body {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

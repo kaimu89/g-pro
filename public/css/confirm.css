@@ -1,0 +1,20 @@
+.form {
+  color: white;
+  width: auto;
+  margin-left: 200px;
+  border-color: white;
+}
+
+.form th {
+  padding-bottom: 20px;
+  text-align: right;
+}
+
+.form td {
+  padding-bottom: 20px;
+}
+
+.form .textarea {
+  vertical-align: top;
+}
+

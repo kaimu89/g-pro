@@ -1,0 +1,48 @@
+@import "form";
+
+@media (min-width: 600px) {
+  .add {
+    .flex {
+      .item-1 {
+        .item-4 {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+      .item-2 {
+        .item-3 {
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .add {
+    .flex {
+      display: block;
+
+      .item-1 {
+        width: 100%;
+        .name {
+          margin: 0;
+        }
+      }
+
+      .item-2 {
+        width: 100%;
+        text-align: center;
+
+        .select {
+          width: 60%;
+        }
+
+        .body {
+          width: 60%;
+        }
+      }
+    }
+  }
+}

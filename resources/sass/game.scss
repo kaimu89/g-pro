@@ -1,0 +1,177 @@
+@import "pagination";
+
+
+// 特例で最初のモバイルにもmediaを付ける。
+@media (max-width: 599px) {
+    .game {
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: solid 1px rgb(216, 216, 216);
+
+        .picture {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            height: 125px;
+            background: #eee;
+
+            .picture2 {
+                height: 100%;
+
+                .game-img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .latter {
+            width: 90%;
+            margin: 0 auto;
+
+            .game-name {
+                display: block;
+                font-size: 1.7rem;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+
+            .char {
+                width: 90%;
+                margin: 0 auto;
+
+                .m {
+                    margin-left: 20px;
+                }
+
+                .b {
+                    display: block;
+                }
+
+                .game-url {
+                    display: block;
+                    word-break: break-all;
+
+                    .url {
+                        text-decoration: none;
+                        color: rgba(29, 161, 242, 1);
+                        cursor: pointer;
+                    }
+                }
+
+                .more {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+//タブレット
+@media (min-width: 600px) {
+    .game {
+        display: flex;
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: solid 1px rgb(216, 216, 216);
+
+        .picture {
+            position: relative;
+            width: 30%;
+            margin-left: 15%;
+            height: auto;
+            background: #eee;
+
+            .picture2 {
+                content: "";
+                display: block;
+                padding-top: 100%;
+
+                .game-img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .latter {
+            width: 57%;
+
+            .game-name {
+                display: block;
+                font-size: 2.5vw;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+
+            .char {
+                width: 70%;
+                margin: 0 auto;
+
+                //pc 小型PC
+                @media (min-width: 960px) and (max-width: 1279px) {
+                    width: 70%;
+                }
+
+                //pc 大型PC
+                @media (min-width: 1280px) {
+                    width: 70%;
+                }
+
+                .game-type {
+                    font-size: 1.7vw;
+
+                    @media (min-width: 960px) {
+                        font-size: 1.3vw;
+                    }
+                }
+
+                .game-genre {
+                    font-size: 1.7vw;
+
+                    @media (min-width: 960px) {
+                        font-size: 1.3vw;
+                    }
+                }
+
+                .game-url {
+                    display: block;
+                    word-break: break-all;
+                    font-size: 1.7vw;
+
+                    @media (min-width: 960px) {
+                        font-size: 1.3vw;
+                    }
+
+                    .url {
+                        text-decoration: none;
+                        color: rgba(29, 161, 242, 1);
+                    }
+                }
+
+                .game-description {
+                    display: block;
+                    font-size: 1.7vw;
+
+                    @media (min-width: 960px) {
+                        font-size: 1.3vw;
+                    }
+                }
+
+                .more {
+                    display: block;
+                    font-size: 1.3vw;
+                    text-align: right;
+                    margin-right: 5%;
+                }
+            }
+        }
+    }
+}

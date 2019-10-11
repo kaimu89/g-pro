@@ -1,0 +1,53 @@
+@import "pagination";
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .team {
+    margin: 0 16px 20px 16px;
+    .team-img {
+      width: 300px;
+      height: 300px;
+    }
+
+    .team-name {
+      text-align: center;
+      display: block;
+    }
+
+    .team-link {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+
+      &:hover {
+        color: rgba(29, 161, 242, 1);
+      }
+    }
+
+    .image-all {
+      text-align: center;
+      .icon-picture {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .name-icon {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+
+      .icon-picture {
+        width: 25px;
+        height: 25px;
+      }
+
+      .ama-team-name {
+        display: block;
+      }
+    }
+  }
+}

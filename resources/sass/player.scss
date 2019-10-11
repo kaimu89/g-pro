@@ -1,0 +1,191 @@
+@import "banner";
+@import "button";
+@import "pagination";
+
+//.noneはheaderの中で宣言されているため、使えてます
+
+.search {
+  text-align: center;
+
+  .s-input {
+    width: 90%;
+    height: 50px;
+    border: solid 1px rgb(216, 216, 216);
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .s-sub {
+    display: none;
+  }
+}
+
+.app-form {
+  margin-top: 10px;
+  text-align: center;
+  .app-span {
+    color: rgba(29, 161, 242, 1);
+  }
+
+  .conditionsbox {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+
+    .app-flex {
+      text-align: left;
+      margin-bottom: 20px;
+
+      .item-2 {
+        .select {
+          width: 100%;
+          height: 25px;
+          border: solid 1px rgb(216, 216, 216);
+          background-color: white;
+          border-radius: 4px;
+        }
+      }
+    }
+    .item-5 {
+      text-align: right;
+    }
+  }
+}
+
+.sideform {
+  display: none;
+}
+
+.display {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 100%;
+
+  .player {
+    padding: 5px;
+    margin: 5px;
+    height: auto;
+    border: solid 1px rgb(230, 236, 240);
+    border-radius: 5px;
+
+    .player-img {
+      width: 150px;
+      height: 180px;
+      border: solid 1px rgb(216, 216, 216);
+    }
+
+    //player-name-leaderとplayer-nameは同じだがリーダーの時
+    .player-name-leader {
+      color: rgba(29, 161, 242, 1);
+      cursor: pointer;
+      display: block;
+      text-align: center;
+    }
+
+    .player-name {
+      color: black;
+      display: block;
+      text-align: center;
+    }
+    .player-game {
+      display: block;
+      text-align: center;
+    }
+    .player-position {
+      display: block;
+      text-align: center;
+    }
+    .player-rank {
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+//タブレット
+@media (min-width: 600px) {
+  .search {
+    text-align: center;
+
+    .s-input {
+      width: 175px;
+      height: 22px;
+      font-size: 13px;
+    }
+    .s-sub {
+      display: inline;
+    }
+  }
+
+  .app-form {
+    display: none;
+  }
+
+  .flex {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .sideform {
+    display: block;
+    width: 200px;
+    margin-top: 20px;
+
+    .side-menu {
+      display: block;
+      margin-left: 5px;
+    }
+    .keyword {
+      margin-left: 5px;
+    }
+    input[type="text"] {
+      margin-left: 5px;
+      margin-bottom: 20px;
+    }
+    .select {
+      width: 175px;
+      margin-left: 5px;
+      margin-bottom: 20px;
+    }
+    input[type="submit"] {
+      margin-left: 135px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .display {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+
+    .player {
+      margin: 10px 15px;
+
+      @media (min-width: 960px) and (max-width: 1279px) {
+        margin: 0 15px;
+      }
+
+      @media (min-width: 1280px) {
+        margin: 0 15px;
+      }
+
+      .player-img {
+        width: 150px;
+        height: 180px;
+      }
+
+      .player-name {
+        display: block;
+        text-align: center;
+      }
+      .player-game {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}

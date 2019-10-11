@@ -1,0 +1,164 @@
+input[type=submit] {
+  -webkit-appearance: none;
+  outline: none;
+  background: transparent;
+}
+
+.btn {
+  text-decoration: none;
+  border: solid 1px black;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  padding: 2px 5px;
+}
+
+.add {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1280px) {
+  .add {
+    width: 70%;
+  }
+}
+
+.add .title {
+  text-align: center;
+}
+
+.add .error-pc {
+  display: none;
+}
+
+.add .error-mob {
+  color: red;
+}
+
+.add .flex {
+  margin-bottom: 16px;
+}
+
+.add .flex .item-1 {
+  display: -webkit-box;
+  display: flex;
+}
+
+.add .flex .item-2 {
+  text-align: center;
+}
+
+.add .flex .item-2 .select {
+  width: 100%;
+  height: 25px;
+  border: solid 1px #d8d8d8;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.add .flex .item-2 .select1 {
+  width: 100%;
+  height: 25px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.add .flex .item-2 .selectbox {
+  text-align: left;
+}
+
+.add .flex .item-2 .body {
+  width: 110%;
+  border: solid 1px #d8d8d8;
+  border-radius: 4px;
+}
+
+.add .item-5 {
+  text-align: right;
+}
+
+.add .item-5 .cancel {
+  margin-right: 10px;
+}
+
+@media (min-width: 600px) {
+  .add .flex .item-2 .select {
+    width: 60%;
+  }
+
+  .add .flex .item-2 .select1 {
+    width: 60%;
+  }
+
+  .add .flex .item-2 .selectbox {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .add .flex .item-2 .body {
+    width: 70%;
+  }
+}
+
+@media (min-width: 960px) {
+  .add .error-pc {
+    display: block;
+  }
+
+  .add .error-pc .small {
+    margin-left: 30%;
+    color: red;
+  }
+
+  .add .error-mob {
+    display: none;
+  }
+
+  .add .flex {
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: flex;
+  }
+
+  .add .flex .item-1 {
+    display: -webkit-box;
+    display: flex;
+    width: 30%;
+  }
+
+  .add .flex .item-1 .name {
+    display: block;
+    margin-left: auto;
+  }
+
+  .add .flex .item-2 {
+    text-align: center;
+    width: 45%;
+  }
+
+  .add .flex .item-2 .select {
+    width: 100%;
+  }
+
+  .add .flex .item-2 .select1 {
+    width: 100%;
+  }
+
+  .add .flex .item-2 .selectbox {
+    width: 100%;
+  }
+
+  .add .flex .item-2 .body {
+    width: 110%;
+  }
+
+  .add .item-5 .btn {
+    margin-right: 10%;
+  }
+
+  .add .item-5 .cancel {
+    margin-right: 10px;
+  }
+}
+

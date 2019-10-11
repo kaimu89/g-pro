@@ -1,0 +1,85 @@
+@import "mymenu";
+
+.add {
+  .password {
+    background-color: white;
+    padding: 10px 10%;
+    margin-bottom: 1px;
+  }
+
+  .full-name {
+    display: flex;
+    background-color: white;
+    padding: 10px 10%;
+
+    .item-1 {
+      width: 48%;
+
+      .name {
+        display: block;
+      }
+      .select {
+        display: block;
+        text-align: center;
+      }
+    }
+    .item-2 {
+      width: 48%;
+
+      .name {
+        display: block;
+      }
+      .select {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+
+  .s {
+    display: none;
+  }
+
+  .flex {
+    .twitter {
+      text-align: center;
+
+      .twi {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .add {
+    .flex {
+      .twitter {
+        width: 70%;
+        text-align: left;
+
+        .at {
+          margin-left: 100px;
+        }
+
+        .select {
+          margin-left: 100px;
+        }
+      }
+    }
+
+    .password {
+      .item-1 {
+        width: 30%;
+        text-align: right;
+      }
+    }
+
+    .full-name {
+      display: none;
+    }
+    .s {
+      display: flex;
+    }
+  }
+}

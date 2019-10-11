@@ -1,0 +1,112 @@
+.links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.links .pagination {
+  list-style-type: none;
+  display: -webkit-box;
+  display: flex;
+  padding: 0;
+}
+
+.links .pagination .page-item {
+  width: 33px;
+  height: 35px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+}
+
+.links .pagination .page-item:first-child {
+  width: 30px;
+  border-radius: 5px 0 0 5px;
+}
+
+.links .pagination .page-item:last-child {
+  width: 30px;
+  border-radius: 0 5px 5px 0;
+}
+
+.links .pagination .page-item .page-link {
+  text-decoration: none;
+  padding: 5.5px 11px;
+  color: #1da1f2;
+}
+
+.links .pagination .disabled .page-link {
+  color: #6c757d;
+}
+
+.links .pagination .active {
+  background-color: #1da1f2;
+}
+
+.links .pagination .active .page-link {
+  color: #dee2e6;
+}
+
+.flex {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex .team {
+  margin: 0 16px 20px 16px;
+}
+
+.flex .team .team-img {
+  width: 300px;
+  height: 300px;
+}
+
+.flex .team .team-name {
+  text-align: center;
+  display: block;
+}
+
+.flex .team .team-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.flex .team .team-link:hover {
+  color: #1da1f2;
+}
+
+.flex .team .image-all {
+  text-align: center;
+}
+
+.flex .team .image-all .icon-picture {
+  width: 25px;
+  height: 25px;
+}
+
+.flex .team .name-icon {
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.flex .team .name-icon .icon-picture {
+  width: 25px;
+  height: 25px;
+}
+
+.flex .team .name-icon .ama-team-name {
+  display: block;
+}
+

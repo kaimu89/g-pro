@@ -1,0 +1,29 @@
+nav .flex {
+  display: -webkit-box;
+  display: flex;
+  border: solid 1px black;
+}
+
+nav .flex .home {
+  list-style-type: none;
+  border: solid 1px black;
+  padding: 0;
+}
+
+nav .flex .log {
+  display: -webkit-box;
+  display: flex;
+  list-style-type: none;
+  border: solid 1px black;
+  padding: 0;
+  margin-left: auto;
+}
+
+nav .flex .log .log-b:first-child {
+  margin-right: 5px;
+}
+
+nav .flex .log .log-b:last-child {
+  margin-left: 5px;
+}
+

@@ -1,0 +1,19 @@
+main {
+  .entry {
+    border: solid 1px white;
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      color: white;
+    }
+    label {
+      color: white;
+    }
+    span {
+      color: white;
+    }
+  }
+}
